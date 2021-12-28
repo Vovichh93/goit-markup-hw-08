@@ -6,26 +6,43 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1600px;
 
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // width: 1600px;
+  @media screen and (max-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .mein-heading {
   display: block;
   margin: 0 auto;
-  width: 696px;
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
+
+  @media screen and (max-width: 480px), (min-width: 480px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 767px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .main-btn {

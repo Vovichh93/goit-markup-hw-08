@@ -14,6 +14,7 @@
 }
 .nav {
   display: flex;
+  display: none;
 }
 .nav__item {
   &:not(:last-child) {
@@ -61,6 +62,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  display: none;
   &__icon-letter {
     width: 16px;
     height: 12px;
@@ -116,4 +118,111 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+// mobile menu
+.open-menu-btn {
+  margin-left: auto;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.close-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu__link {
+  color: #212121;
+}
+
+.contacts-menu__item {
+  &:not(last-child) {
+    margin-bottom: 32px;
+  }
+  &:last-child {
+    margin-bottom: 64px;
+  }
+}
+
+.contacts-menu__mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.contacts-menu__tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.social-mob-list__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:not(:last-child)::after {
+    content: '';
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+.social-mob-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu__buttom {
+  display: block;
+  margin-top: auto;
 }
