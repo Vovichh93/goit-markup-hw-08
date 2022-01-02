@@ -15,8 +15,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   padding: 40px;
 
   background: #ffffff;
@@ -26,6 +24,14 @@
   transform: scale(1) rotate(0) translate(-500px, 500px);
   transform: translate(-50%, -50%);
   transition: transform 500ms;
+  @media screen and (max-width: 1200px) {
+    width: 94vw;
+    height: 94vh;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 580px;
+    height: 527px;
+  }
 }
 
 .modal-close {
@@ -69,6 +75,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: #212121;
+  @media screen and (max-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 .input-wrap {
   position: relative;
@@ -85,7 +95,6 @@
 .modal-form-input {
   margin: 0;
   width: 100%;
-  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
@@ -106,7 +115,6 @@
 }
 .area-text {
   width: 100%;
-  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -132,8 +140,8 @@
   letter-spacing: 0.01em;
 }
 .wrap-check {
-  margin-top: 16px;
-  margin-bottom: 34px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .check-item {
@@ -156,7 +164,6 @@
 }
 .check-text {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   font-style: normal;
@@ -164,6 +171,10 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .link-check {
   font-weight: 400;
@@ -171,6 +182,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .btn-modal {
   display: block;
