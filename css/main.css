@@ -1765,6 +1765,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
