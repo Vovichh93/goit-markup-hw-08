@@ -138,10 +138,17 @@ body {
   transition: transform 500ms, -webkit-transform 500ms;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .modal {
     width: 94vw;
     height: 94vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -343,6 +350,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -858,15 +868,15 @@ body {
   color: var(--first-title-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .mein-heading {
-    width: 360px;
     font-size: 26px;
-    line-height: 1.6;
+    line-height: 1.62;
+    width: 360px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mein-heading {
     width: 696px;
     font-size: 44px;
@@ -961,6 +971,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-column__header {
+    text-align: center;
+  }
 }
 
 .advantages-column__text {
@@ -1189,6 +1205,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .clients__item {
@@ -1316,13 +1333,10 @@ img {
   }
 }
 
-.footer__address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--address-color);
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__address {
+    margin-left: 61px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1338,6 +1352,10 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.footer-contacts__item > a {
+  color: #ffffff;
 }
 
 .futter__link {
@@ -1390,6 +1408,13 @@ img {
   .futter__socials {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .futter__socials {
+    margin-right: 89px;
+    margin-top: 5px;
   }
 }
 
@@ -1560,9 +1585,15 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .subscription__input {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
   }
 }
 

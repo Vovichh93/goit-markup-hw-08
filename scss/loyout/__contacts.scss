@@ -32,20 +32,18 @@
   }
 }
 .footer__address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--address-color);
+  @media screen and(min-width:768px) and (max-width: 1200px) {
+    margin-left: 61px;
+  }
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
+.footer-contacts__item > a {
+  color: #ffffff;
+}
 .futter__link {
   font-style: normal;
   font-weight: 400;
@@ -62,6 +60,7 @@
     color: var(--accent-color);
   }
 }
+
 .futter__mail {
   margin-bottom: 8px;
   margin-top: 8px;
@@ -82,6 +81,10 @@
   @media screen and (max-width: 768px) {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 89px;
+    margin-top: 5px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 12px;
@@ -180,8 +183,11 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  @media screen and(max-width:1200px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 }
 
