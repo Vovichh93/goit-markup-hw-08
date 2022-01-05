@@ -138,14 +138,14 @@ body {
   transition: transform 500ms, -webkit-transform 500ms;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .modal {
     width: 94vw;
     height: 94vh;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1585,13 +1585,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .subscription__input {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .subscription__input {
     width: 450px;
   }

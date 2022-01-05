@@ -24,11 +24,11 @@
   transform: scale(1) rotate(0) translate(-500px, 500px);
   transform: translate(-50%, -50%);
   transition: transform 500ms;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     width: 94vw;
     height: 94vh;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
   }
