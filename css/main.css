@@ -1226,8 +1226,8 @@ img {
   margin-bottom: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
-  -webkit-transition-property: color, border-color;
-  transition-property: color, border-color;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1236,6 +1236,7 @@ img {
 
 .clients__item:hover, .clients__item:focus {
   border-color: #2196f3;
+  color: #2196f3;
 }
 
 @media screen and (max-width: 768px) {
@@ -1261,20 +1262,17 @@ img {
 
 .clients-item__link {
   color: #afb1b8;
-  -webkit-transition-property: color, border-color;
-  transition-property: color, border-color;
+  fill: currentColor;
+  -webkit-transition-property: color;
+  transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item__link:hover, .clients-item__link:focus {
-  color: #2196f3;
-}
-
-.clients-item__icon {
-  fill: currentColor;
+.clients__item:hover .clients-item__link {
+  color: currentColor;
 }
 
 .footer {

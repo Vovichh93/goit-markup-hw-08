@@ -26,13 +26,14 @@
   margin-bottom: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
-
-  transition-property: color, border-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     border-color: #2196f3;
+    color: #2196f3;
   }
 
   @media screen and (max-width: 768px) {
@@ -48,16 +49,12 @@
 
 .clients-item__link {
   color: #afb1b8;
-
-  transition-property: color, border-color;
+  fill: currentColor;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #2196f3;
-  }
 }
 
-.clients-item__icon {
-  fill: currentColor;
+.clients__item:hover .clients-item__link {
+  color: currentColor;
 }
